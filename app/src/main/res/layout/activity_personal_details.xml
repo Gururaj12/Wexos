@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context="com.example.india.wexos.PersonalDetails">
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logopng"
+        android:layout_gravity="center" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:text="JOINING FORM AND EMPLOYEE INFORMATION SHEET"
+                android:layout_width="match_parent"
+                android:textColor="#000"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/etname"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="NAME"
+                android:textColorHint="#585656"/>
+            <EditText
+                android:id="@+id/etfathername"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="FATHER NAME"
+                android:textColorHint="#585656"/>
+            <EditText
+                android:id="@+id/etdateofjoin"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="DATE OF JOINING"
+                android:textColorHint="#585656"/>
+            <EditText
+                android:id="@+id/etdateofbirth"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="DATE OF BIRTH"
+                android:textColorHint="#585656"/>
+            <EditText
+
+                android:layout_marginTop="15dp"
+                android:background="@drawable/reactangles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="CURRENT ADDRESS"
+                android:gravity="left|top"
+                android:textColorHint="#585656"
+                android:layout_margin="10dp"
+                android:padding="40dp"
+                android:inputType="textMultiLine"
+                android:id="@+id/etcurrentadd" />
+            <EditText
+                android:id="@+id/etprmntaddress"
+                android:layout_margin="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/reactangles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="PERMANENT ADDRESS"
+                android:textColorHint="#585656"
+                android:padding="40dp"
+                android:inputType="textMultiLine"/>
+            <EditText
+                android:id="@+id/etcontactnumber"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="CONTACT NUMBER"
+                android:textColorHint="#585656"/>
+            <TextView
+                android:text="FAMILY DETAILS"
+                android:gravity="center"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/etname2"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="NAME"
+                android:layout_margin="5dp"
+                android:textColorHint="#585656"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/etfathername2"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="FATHER NAME"
+                    android:textColorHint="#585656"/>
+                <EditText
+                    android:id="@+id/etfatheroccuation"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="OCCUPATION"
+                    android:textColorHint="#585656"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/etmothername"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="MOTHER NAME"
+                    android:textColorHint="#585656"/>
+                <EditText
+                    android:id="@+id/etmotheroccupation"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="OCCUPATION"
+                    android:textColorHint="#585656"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/etbroname"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="BROTHER NAME"
+                    android:textColorHint="#585656"/>
+                <EditText
+                    android:id="@+id/etbroccupation"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="OCCUPATION"
+                    android:textColorHint="#585656"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/etsisname"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="SISTER NAME"
+                    android:textColorHint="#585656"/>
+                <EditText
+                    android:id="@+id/etsisoccupation"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="OCCUPATION"
+                    android:textColorHint="#585656"/>
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="EDUCATION QUALIFICATION"
+                android:gravity="center"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+            <EditText
+                android:id="@+id/etqualification"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="QUALIFICATION"
+                android:layout_margin="5dp"
+                android:textColorHint="#585656"/>
+            <EditText
+                android:id="@+id/etuniversity"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="UNIVERSITY/INSTITUTE"
+                android:textColorHint="#585656"/>
+            <EditText
+                android:id="@+id/etpassingyr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="YEAR OF PASSING"
+                android:textColorHint="#585656"/>
+            <EditText
+                android:id="@+id/etmarks"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="% MARKS"
+                android:textColorHint="#585656"/>
+            <EditText
+                android:id="@+id/etmajrsub"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="MAJOR SUBJECT"
+                android:textColorHint="#585656"/>
+            <Button
+              android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SUBMIT"
+                android:layout_gravity="center"
+                android:padding="15dp"
+                android:textSize="20sp"
+                android:background="#03deab"
+                android:textColor="#000"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

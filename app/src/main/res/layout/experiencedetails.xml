@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context="com.example.india.wexos.Experiencedetails">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/logopng"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Experience :"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:text=" Current Organization :"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+                <EditText
+                    android:id="@+id/currentorg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:text="Time Period :"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/timeperiodfrom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/border"
+                        android:hint="From"
+                        android:padding="5dp" />
+
+                    <EditText
+                        android:id="@+id/timeperiodto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border"
+                        android:hint="To"
+                        android:padding="5dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="Designation "
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:id="@+id/textView"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Last Position Held :"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+                <EditText
+                    android:id="@+id/lastpos"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Job Responsibility :"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+                <EditText
+                    android:id="@+id/jobres"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Grass salary drawn :"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+                <EditText
+                    android:id="@+id/sal"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Reason For Leaving :"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/leaving"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:background="@drawable/border"
+                android:gravity="left|top"
+                android:inputType="textMultiLine"
+                android:maxLines="10"
+                android:minLines="3"
+                android:padding="40dp">
+
+                <requestFocus />
+            </EditText>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_weight="1"
+                    android:text="Languages Known :"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/lang1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="1." />
+
+                    <EditText
+                        android:id="@+id/lang2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="2." />
+
+                    <EditText
+                        android:id="@+id/lang3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="3." />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Your Hobbies   :"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/hobbies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/border"
+                android:gravity="left|top"
+                android:inputType="textMultiLine"
+                android:maxLines="10"
+                android:minLines="3"
+                android:padding="20dp">
+                <requestFocus />
+            </EditText>
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Your Goal In Life   :"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/goal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/border"
+                android:gravity="left|top"
+                android:inputType="textMultiLine"
+                android:maxLines="10"
+                android:minLines="3"
+                android:padding="20dp">
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Are You Willing To Travel"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="In India :"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/ind"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:padding="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="In Abroad:"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/anbr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:padding="10dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="State restriction/Problems If any :"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/stateres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/border"
+                android:padding="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Passport No :"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:padding="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="valid Upto     :"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/valid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:padding="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="PAN CARD DETAILS:"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/pandetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:padding="15dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Are You Related to Any of our Employees ?"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="If yes his/ her Name :"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/relatedname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:padding="15dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Would You Like to attend Any Specific Training :"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/train"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/border"
+                android:padding="20dp" />
+
+            <Button
+                android:id="@+id/sub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="At The Time Of Joinining :"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/timeofjoin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>
